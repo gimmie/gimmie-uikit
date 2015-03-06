@@ -1,22 +1,20 @@
 body{
     padding-top: 50px;
     background-color: #f1f1f1;
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #243441;
+    font-weight: 300;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, caption{
     color: #3a566c;
+    font-family: 'Maven Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small,
 .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small,
 h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small{
     color: #3a566c;
 }
-caption{
-    color: #3a566c;
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 
 hr{
     border-color: #ddd;
@@ -54,7 +52,12 @@ hr{
 }
 
 
-
+p{
+    font-size: 16px;
+}
+p.lead{
+    font-size: 20px;
+}
 
 .btn {
     -webkit-border-radius: 5px;
@@ -64,7 +67,12 @@ hr{
     border: none;
     text-transform: capitalize;
     color: #ffffff;
+    font-weight: 300;
     transition: background-color 0.3s ease 0s;
+    -webkit-transition: background-color 0.3s ease 0s;
+    -moz-transition: background-color 0.3s ease 0s;
+    -ms-transition: background-color 0.3s ease 0s;
+    -o-transition: background-color 0.3s ease 0s;
 }
 
 .btn:active{
@@ -324,6 +332,22 @@ select.form-control:focus,
     background-color: #d53e4f;
 }
 
+.tooltip-inner {
+    background-color: #3a566c;
+}
+.tooltip.left .tooltip-arrow{
+    border-left-color: #3a566c;
+}
+.tooltip.top .tooltip-arrow{
+    border-top-color: #3a566c;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: #3a566c;
+}
+.tooltip.right .tooltip-arrow{
+    border-right-color: #3a566c;
+}
+
 
 .table-striped > tbody > tr:nth-of-type(odd){
     background-color: #f7f8fa;
@@ -341,11 +365,11 @@ select.form-control:focus,
 .table > thead > tr > th{
     border-color: #b5c7d5;
     color: #3a566c;
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Maven Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .table > tbody > tr > th{
     color: #3a566c;
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Maven Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
