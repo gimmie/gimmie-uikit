@@ -26,6 +26,9 @@
 *.sql
 *.sqlite
 .idea/
+.iws
+workspace.xml
+tasks.xml
 
 # OS generated files #
 ######################
