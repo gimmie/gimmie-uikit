@@ -269,6 +269,24 @@ p.lead {
     margin: 0;
 }
 
+.btn-gimmie {
+    -webkit-box-shadow: 0 3px 0 #d11600;
+    -moz-box-shadow: 0 3px 0 #d11600;
+    box-shadow: 0 3px 0 #d11600;
+    background: #f45228;
+}
+
+.btn-gimmie.active,
+.btn-gimmie.focus,
+.btn-gimmie:active,
+.btn-gimmie:focus,
+.btn-gimmie:hover,
+.open > .dropdown-toggle.btn-gimmie {
+    color: #ffffff;
+    background-color: rgba(244, 82, 40, 0.8);
+}
+
+
 .btn.dropdown-toggle {
     box-shadow: none;
 }
