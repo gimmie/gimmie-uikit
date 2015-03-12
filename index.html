@@ -5,11 +5,13 @@
     <title>Gimmie UI Kit</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic|Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/icheck.js"></script>
+    <script type="text/javascript" src="js/bootbox.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -27,6 +29,7 @@
         <br>
         <br>
         <p>This document is created to define a consistent user interface for all Gimmie's products and websites.</p>
+        <p>**I used <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a> for icons instead of Glyph icon which is bootstrap default icon font, see the comparison <a href="http://tagliala.github.io/vectoriconsroundup/" target="_blank">here</a>. There is a gem for FontAwesome in RoR, <a href="https://github.com/bokmann/font-awesome-rails" target="_blank">here is the Gem link</a>.</p>
     </section>
     <section class="section">
         <h2>Color Swatches</h2>
@@ -113,9 +116,9 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <div class="input-group">
-                                <div class="input-group-addon">$</div>
+                                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
                                 <input type="text" class="form-control" placeholder="Amount">
-                                <div class="input-group-addon">.00</div>
+                                <span class="input-group-addon">.00</span>
                             </div>
                         </div>
                     </form>
@@ -448,6 +451,8 @@
 
     <section class="section">
         <h2>Checkbox & Radio button</h2>
+        <p>For checkboxes and radio buttons I used this plugin: <a href="http://fronteed.com/iCheck/" target="_blank">iCheck</a> for more information please visit it's page.</p>
+        <br>
         <div class="checkbox">
             <label>
                 <input class="iCheck" type="checkbox" value="">
@@ -589,11 +594,18 @@
         </div>
     </section>
 
-    <section class="">
-        <h2>Light box</h2>
+    <section class="section">
+        <h2>Light box and alert box</h2>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Launch demo modal
+        </button>
+        <br>
+        <br>
+        <br>
+        <p>For showing js alerts I used this plugin: <a href="http://bootboxjs.com/" target="_blank">BootBox</a> for more information please visit it's page.</p>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myAlert">
+            Launch demo js alert
         </button>
 
         <!-- Modal -->
@@ -602,7 +614,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title">Modal title</h4>
                     </div>
                     <div class="modal-body">
                         Overflowing text to show scroll behavior
@@ -632,6 +644,104 @@
                 </div>
             </div>
         </div>
+
+        <div id="myAlert" class="modal fade">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <!-- dialog body -->
+                    <div class="modal-body">
+                        <h5 class="modal-title">Hello world!</h5>
+                    </div>
+                    <!-- dialog buttons -->
+                    <div class="modal-footer">
+                        <button data-bb-handler="cancel" type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        <button data-bb-handler="confirm" type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <h2>Boxes</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel">
+                        <div class="panel-title">
+                            <h3>Half width Panel</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a class="btn btn-info">view more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="panel panel-form">
+                        <div class="panel-title text-center">
+                            <h2>Sign up</h2>
+                        </div>
+                        <div class="panel-body text-center">
+                            <form class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                    <input type="text" class="form-control" placeholder="Username">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                    <input type="password" class="form-control" placeholder="Password (6 character minimum)">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                    <input type="password" class="form-control" placeholder="Password confirmation">
+                                </div>
+                                <div class="checkbox text-left">
+                                    <label>
+                                        <input class="iCheck" type="checkbox" value="">
+                                        I agree to the Terms and Conditions and Privacy Policy
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Sign up</button>
+                                <p class="or-line"><i>or</i></p>
+                                <button type="button" class="btn btn-info"><i class="fa fa-linkedin-square"></i> Sign up with linkedin</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel">
+                        <div class="panel-title">
+                            <h3>Full width Panel</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a class="btn btn-info">view more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>ELF</h2>
+        <p>This is how we show ELF in taster flow as a help for the user. Text inside the popover is not finalised. Click on ELF to see the popover for now, wi will show it automatically on taster flow.</p>
+        <a
+            tabindex="0"
+            class="elf"
+            data-placement="right"
+            role="button"
+            data-toggle="popover"
+            title="Hi! I'm ELF!"
+            data-content="I am here to help you! Just 2 more step to go!">
+            <img src="img/ELF-normal.svg">
+        </a>
     </section>
     <br>
     <br>
@@ -646,9 +756,11 @@
             checkboxClass: 'icheckbox_flat-blue',
             radioClass: 'iradio_flat-blue'
         });
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('[data-toggle="popover"]').popover();
+
     });
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
 </script>
 </html>
