@@ -1,0 +1,54 @@
+/***** This part should not be apply *****/
+.navbar h1 {
+  color: #ffffff;
+  margin-top: 10px;
+  display: block;
+  font-size: 22px;
+}
+
+.section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.colors {
+  width: 100%;
+}
+
+.colors ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.colors ul li {
+  display: inline-block;
+  width: 14%;
+  margin: 0 1%;
+  height: 80px;
+  text-indent: 10px;
+  padding-top: 25px;
+}
+
+.buttons ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.buttons ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.inputs ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.inputs li {
+  display: inline-block;
+  margin-right: 20px;
+}

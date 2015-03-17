@@ -7,6 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic|Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/page.css" rel="stylesheet">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -16,20 +17,119 @@
 <body>
 <nav class="navbar navbar-gimmie navbar-fixed-top">
     <div class="container">
-        <div class="text-center">
-            <h1>Gimmie UI Kit</h1>
-        </div>
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="http://assets.gimmie.io/production/gimmiex-logo-645bf544a5967f20e85d7b3bfb323e4e.png">
+                    <h1>Gimmie UI Kit</h1>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </div>
 </nav>
 
 <div class="container">
-
+    <br>
+    <br>
     <section class="section">
-        <br>
-        <br>
-        <br>
+        <h3>UI style guides</h3>
         <p>This document is created to define a consistent user interface for all Gimmie's products and websites.</p>
-        <p>**I used <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a> for icons instead of Glyph icon which is bootstrap default icon font, see the comparison <a href="http://tagliala.github.io/vectoriconsroundup/" target="_blank">here</a>. There is a gem for FontAwesome in RoR, <a href="https://github.com/bokmann/font-awesome-rails" target="_blank">here is the Gem link</a>.</p>
+        <br>
+        <div>
+            <h4>Colors</h4>
+            <ul>
+                <li>
+                    <p>Body Background color always is “#f1f1f1”</p>
+                </li>
+                <li>
+                    <p>All the colours we use should select from our “Color Swatches”</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Buttons</h4>
+            <p>All buttons will get “btn” class by default and also for sizes will follow the bootstrap default classes.</p>
+            <ul>
+                <li>
+                    <p>All the “call to action” button types should get “btn-gimmie” class</p>
+                </li>
+                <li>
+                    <p>All the “info” button types should get “btn-info” class</p>
+                </li>
+                <li>
+                    <p>All the “save, update, upgrade, success, send” button types should get “btn-success” class</p>
+                </li>
+                <li>
+                    <p>All the “sign up, sign in” button types should get “btn-warning” class</p>
+                </li>
+                <li>
+                    <p>All the “cancel, close, dismiss” button types should get “btn-default” or “btn-link” class, depends on the place</p>
+                </li>
+                <li>
+                    <p>All the “delete, remove” button types should get “btn-danger” class</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Typography</h4>
+            <ul>
+                <li>
+                    <p>We should not overwrite any additional font size for any element. Font sizes are defined in bootstrap</p>
+                </li>
+                <li>
+                    <p>For putting a leading text we use “lead” class for “p” tag</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>Navbar</h4>
+            <ul>
+                <li>
+                    <p>for fixed navbar we should use “navbar-fixed-top” and “navbar-gimmie” classes</p>
+                </li>
+                <li>
+                    <p>None of dropdown or normal buttons inside the navbar will give any button class</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h4>jQuery plugins</h4>
+            <ul>
+                <li>
+                    <p><b><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome</a></b> for icons instead of Glyph icon which is bootstrap default icon font, see the comparison <a href="http://tagliala.github.io/vectoriconsroundup/" target="_blank">here</a>. There is a gem for FontAwesome in RoR, <a href="https://github.com/bokmann/font-awesome-rails" target="_blank">here is the Gem link</a>.</p>
+                </li>
+                <li>
+                    <p><b><a href="http://fronteed.com/iCheck/" target="_blank">iCheck</a></b> plugin for checkboxes and radio buttons, for more information please visit it's page.</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <section class="section">
         <h2>Color Swatches</h2>
@@ -406,7 +506,7 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -454,8 +554,6 @@
 
     <section class="section">
         <h2>Checkbox & Radio button</h2>
-        <p>For checkboxes and radio buttons I used this plugin: <a href="http://fronteed.com/iCheck/" target="_blank">iCheck</a> for more information please visit it's page.</p>
-        <br>
         <div class="checkbox">
             <label>
                 <input class="iCheck" type="checkbox" value="">

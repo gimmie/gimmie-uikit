@@ -1,62 +1,7 @@
-/***** This part should not be apply *****/
-.navbar h1 {
-    color: #ffffff;
-    margin-top: 10px;
-    display: block;
-    font-size: 22px;
-}
-
-.section {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-}
-
-.colors {
-    width: 100%;
-}
-
-.colors ul {
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-}
-
-.colors ul li {
-    display: inline-block;
-    width: 14%;
-    margin: 0 1%;
-    height: 80px;
-    text-indent: 10px;
-    padding-top: 25px;
-}
-
-.buttons ul {
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-}
-
-.buttons ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.inputs ul {
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-}
-
-.inputs li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
 /***** General and typography *****/
 
 body {
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: #f1f1f1;
     font-family: 'Source Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #243441;
@@ -66,11 +11,12 @@ body {
 hr {
     border-color: #ddd;
 }
+
 a:focus {
     outline: none;
 }
 
-.or-line{
+.or-line {
     margin: 30px 0;
     line-height: 0;
     border-bottom: 1px solid #b5c7d5;
@@ -78,7 +24,8 @@ a:focus {
     color: #b5c7d5;
     text-align: center;
 }
-.or-line i{
+
+.or-line i {
     background-color: #fff;
     padding: 0 5px;
     font-size: 20px;
@@ -144,6 +91,7 @@ p.lead {
     -moz-transition: background-color 0.3s ease 0s;
     -ms-transition: background-color 0.3s ease 0s;
     -o-transition: background-color 0.3s ease 0s;
+    margin: 5px 0;
 }
 
 .btn.active.focus,
@@ -151,17 +99,16 @@ p.lead {
 .btn.focus,
 .btn:active.focus,
 .btn:active:focus,
-.btn:focus{
+.btn:focus {
     outline: none;
 }
 
 .btn:active {
-    margin-top: 5px;
-    margin-bottom: -5px;
+    margin: 7px 0 3px 0;
 }
 
-.modal-footer .btn+.btn:active {
-     margin-bottom: -5px;
+.modal-footer .btn + .btn:active {
+    margin-bottom: -5px;
 }
 
 .btn-info {
@@ -263,10 +210,11 @@ p.lead {
 
 .btn-link {
     color: #41a0da;
+    padding: 7px 12px 0;
 }
 
 .btn-link:active {
-    margin: 0;
+    margin: 5px 0;
 }
 
 .btn-gimmie {
@@ -286,17 +234,24 @@ p.lead {
     background-color: rgba(244, 82, 40, 0.8);
 }
 
-
 .btn.dropdown-toggle {
     box-shadow: none;
 }
 
 .btn.dropdown-toggle:active {
-    margin: 0;
+    margin: 5px 0;
 }
 
 .btn-group[data-toggle="buttons"] label {
     box-shadow: none;
+}
+
+.btn-group[data-toggle="buttons"] .btn:active {
+    margin: 5px 0 5px -1px;
+}
+
+.btn-group[data-toggle="buttons"] > .btn:first-child:active {
+    margin-left: 0;
 }
 
 /***** Inputs *****/
@@ -337,7 +292,7 @@ p.lead {
     text-transform: capitalize;
 }
 
-.input-group{
+.input-group {
     margin-bottom: 5px;
 }
 
@@ -406,7 +361,7 @@ select.form-control:focus,
 /***** Labels *****/
 .label {
     font-size: 85%;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .label-default {
@@ -455,13 +410,13 @@ select.form-control:focus,
 }
 
 /***** Popover *****/
-.popover{
+.popover {
     border-color: #b5c7d5;
     color: #243441;
     font-weight: 300;
-    -webkit-box-shadow: 0 1px 8px rgba(181, 199, 213,.9);
-    -moz-box-shadow: 0 1px 8px rgba(181, 199, 213,.9);
-    box-shadow: 0 1px 8px rgba(181, 199, 213,.9);
+    -webkit-box-shadow: 0 1px 8px rgba(181, 199, 213, .9);
+    -moz-box-shadow: 0 1px 8px rgba(181, 199, 213, .9);
+    box-shadow: 0 1px 8px rgba(181, 199, 213, .9);
 }
 
 .popover-title {
@@ -485,7 +440,7 @@ select.form-control:focus,
     border-bottom-color: rgba(0, 0, 0, .2);
 }
 
-.popover.bottom > .arrow:after{
+.popover.bottom > .arrow:after {
     border-bottom-color: #f7f8fa;
 }
 
@@ -564,12 +519,16 @@ select.form-control:focus,
 .navbar-gimmie {
     background-color: #3288bd;
     border-color: #b5c7d5;
+    height: 60px;
 }
 
 .navbar-gimmie .navbar-nav > li > a {
     color: #ffffff !important;
+    line-height: 28px;
 }
 
+.navbar-gimmie .navbar-nav > li > a:hover,
+.navbar-gimmie .navbar-nav > li > a:focus,
 .navbar-gimmie .navbar-nav > .active > a,
 .navbar-gimmie .navbar-nav > .active > a:focus,
 .navbar-gimmie .navbar-nav > .active > a:hover,
@@ -581,13 +540,20 @@ select.form-control:focus,
 
 .navbar-gimmie .navbar-brand {
     padding: 0;
-    width: 60px;
+    height: 60px;
 }
 
 .navbar-gimmie .navbar-brand img {
     height: 100%;
-    margin-left: 10px;
-    padding: 5px 0;
+    margin: 0 10px;
+    padding: 3px 0;
+    display: inline-block;
+}
+
+.navbar-gimmie .navbar-brand h1{
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    vertical-align: middle;
 }
 
 .checkbox label, .radio label {
@@ -595,8 +561,6 @@ select.form-control:focus,
     font-size: 16px;
     font-weight: 300;
 }
-
-
 
 /* iCheck plugin Flat skin, blue
 ----------------------------------- */
@@ -736,8 +700,8 @@ select.form-control:focus,
     border-bottom-color: transparent;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
+.nav-tabs .nav > li > a:focus,
+.nav-tabs .nav > li > a:hover {
     background-color: #f7f8fa;
 }
 
@@ -745,8 +709,9 @@ select.form-control:focus,
     border-color: #f7f8fa #f7f8fa #b5c7d5;
 }
 
-.nav .open > a, .nav .open > a:focus,
-.nav .open > a:hover {
+.nav-tabs .nav .open > a,
+.nav-tabs .nav .open > a:focus,
+.nav-tabs .nav .open > a:hover {
     background-color: #f7f8fa;
     border-color: #b5c7d5;
 }
@@ -755,12 +720,12 @@ select.form-control:focus,
     margin-top: 20px;
 }
 
-
 /***** ELF *****/
-.elf{
+.elf {
     display: inline-block;
 }
-.elf img{
+
+.elf img {
     width: 100px;
 }
 
@@ -769,13 +734,13 @@ select.form-control:focus,
     padding: 0;
     border: 1px solid #f7f8fa;
     border-radius: 4px;
-    -webkit-box-shadow: 0 1px 3px rgba(181, 199, 213,.9);
-    -moz-box-shadow: 0 1px 3px rgba(181, 199, 213,.9);
-    box-shadow: 0 1px 3px rgba(181, 199, 213,.9);
+    -webkit-box-shadow: 0 1px 3px rgba(181, 199, 213, .9);
+    -moz-box-shadow: 0 1px 3px rgba(181, 199, 213, .9);
+    box-shadow: 0 1px 3px rgba(181, 199, 213, .9);
 }
 
 .panel .checkbox label,
-.panel .radio label{
+.panel .radio label {
     font-size: 14px;
 }
 
@@ -784,15 +749,19 @@ select.form-control:focus,
     border-bottom: 1px solid #f7f8fa;
 }
 
-.panel .panel-title h2{
+.panel .panel-title h2 {
     margin-top: 10px;
     font-size: 24px;
 }
+
 .panel .panel-title h3 {
     margin-top: 10px;
     font-size: 20px;
 }
-.panel .panel-body{}
+
+.panel .panel-body {
+}
+
 .panel .panel-footer {
     background-color: #f7f8fa;
     border-color: #b5c7d5;
