@@ -52,3 +52,7 @@
   display: inline-block;
   margin-right: 20px;
 }
+
+.section:target {
+    padding-top: 60px;
+}
