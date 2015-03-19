@@ -254,6 +254,10 @@ p.lead {
     margin-left: 0;
 }
 
+.btn-block {
+    display: inline-block;
+}
+
 /***** Inputs *****/
 .form-group .form-control {
     border: 2px solid #b5c7d5;
