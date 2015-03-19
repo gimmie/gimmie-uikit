@@ -12,6 +12,14 @@ hr {
     border-color: #ddd;
 }
 
+abbr[title]{
+    border: none;
+}
+
+label{
+    display: block;
+}
+
 a:focus {
     outline: none;
 }
@@ -30,8 +38,6 @@ a:focus {
     padding: 0 5px;
     font-size: 20px;
 }
-
-/*****/
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, caption {
     color: #3a566c;
@@ -294,6 +300,7 @@ p.lead {
     color: #3a566c;
     font-size: 16px;
     text-transform: capitalize;
+    font-weight: 400;
 }
 
 .input-group {
